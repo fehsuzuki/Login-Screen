@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    width: 25vw;
+    height: 60vh;
+    box-shadow: 0 10px 10px #e4e4e4;
+    border-radius: 10px;
+}
+
+.login-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.options-login {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.options-login > button {
+    font-size: 1.2rem;
+    color: #726130;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid #726130;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.options-login > button:hover {
+    border: 1px solid #e3c464;
+    color: #e3c464;
+    transition: 0.2s;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    position: relative;
+}
+
+.divider {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+    bottom: 0;
+    z-index: -1;
+}
+
+.campo-email {
+    margin-top: 3rem;
+}
+
+.campo-senha {
+    margin-top: 1rem;
+}
+
+.custome-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: .3rem;
+    position: relative;
+}
+
+.input {
+    height: 2.7rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: 1rem;
+
+}
+
+.custome-input i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1.2rem;
+}
+
+.input::placeholder {
+    font-size: 1.1rem;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #e3c464;
+    transition: .2s;
+}
+
+.input:focus + i{
+    color: #e3c464;
+    transition: .2s;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    height: 2.7rem;
+}
+
+.login-button > button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    background-color: #e3c464;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-button > button:hover {
+    background-color: #d3b65e;
+    transition: .2s;
+}
+
+.footer {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.footer > button {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #e3c464;
+    cursor: pointer;
+}
+
+.footer > button:hover {
+    border-bottom: 1px solid #e3c464;
+}
